@@ -7,6 +7,7 @@ createApp({
         return {
             inputMessage: '',
             activeItem: 0,
+            searchContact: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -197,6 +198,12 @@ createApp({
                 )
             }, 1000);
         },
-
+    },
+    computed: {
+        filteredList() {
+            return this.contacts.filter(contact => {
+                return contact.name.toLowerCase().includes(this.searchContact.toLowerCase())
+            })
+        }
     }
 }).mount('#app')

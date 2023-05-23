@@ -35,10 +35,11 @@
                 </div>
                 <!-- search bar -->
                 <div class="search-contact">
-                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="searchContact">
                 </div>
                 <!-- list of contacts -->
-                <div class="contact" v-for="(contact, idxContact) in contacts" @click="showConversation(idxContact)">
+                <div class="contact" v-for="(contact, idxContact) in filteredList"
+                    @click="showConversation(idxContact)">
                     <div class="icon">
                         <img :src="contact.avatar">
                     </div>
