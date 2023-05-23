@@ -25,17 +25,39 @@
             <!-- left side of the app -->
             <div class="leftside">
                 <div class="header">
+                    <div class="icon">
+                        <img src="img/man.png">
+                    </div>
                     <div class="user">
+                        <span class="span-name">
+                            Nome Utente
+                        </span>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="notifiche">
+                    <div class="icon">
+                        <i class="fa-solid fa-bell-slash" id="bell-notifiche"></i>
+                    </div>
+                    <div class="user">
+                        <span class="span-name">
+                            Ricevi notifiche di nuovi messaggi
+                        </span>
+                        <div class="attiva-notifiche">
+                            <a href="#">Attiva notifiche desktop</a>
+                        </div>
                     </div>
                     <div class="icons">
                     </div>
                 </div>
-                <div class="notifiche">
-
-                </div>
                 <!-- search bar -->
                 <div class="search-contact">
-                    <input type="text" placeholder="Cerca o inizia una nuova chat" v-model="searchContact">
+                    <input class="mainLoginInput" type="text" placeholder=" &#xf002;  Cerca o inizia una nuova chat"
+                        v-model="searchContact">
                 </div>
                 <!-- list of contacts -->
                 <div class="contact" v-for="(contact, idxContact) in filteredList"
@@ -43,7 +65,11 @@
                     <div class="icon">
                         <img :src="contact.avatar">
                     </div>
-                    <div class="name">{{contact.name}}</div>
+                    <div class="name">
+                        <span class="span-name">
+                            {{contact.name}}
+                        </span>
+                    </div>
                     <div class="time">00:00</div>
                 </div>
             </div>
@@ -51,9 +77,18 @@
             <!-- right side of the app -->
             <div class="rightside">
                 <div class="header">
+                    <div class="icon">
+                        <img :src="contacts[activeItem].avatar">
+                    </div>
                     <div class="user">
+                        <span class="span-name">
+                            {{contacts[activeItem].name}}
+                        </span>
                     </div>
                     <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
 
@@ -71,23 +106,23 @@
 
                 <!-- input messages -->
                 <div class="input-message">
+                    <div>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
                     <input v-model="inputMessage" type="text" placeholder="Scrivi un messaggio"
                         @keyup.enter="sendMessage()">
+                    <div>
+                        <i class="fa-solid fa-microphone-slash"></i>
+                    </div>
                 </div>
             </div>
         </main>
 
-
-
-
-
-
-
-
-
-
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- <script src="
+https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js
+"></script> -->
     <script src="main.js"></script>
 </body>
 
