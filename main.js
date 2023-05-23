@@ -184,7 +184,18 @@ createApp({
                     status: 'sent'
                 }
             )
+
             this.inputMessage = '';
+
+            setTimeout(() => {
+                this.contacts[this.activeItem].messages.push(
+                    {
+                        date: 'now',
+                        message: 'Ok',
+                        status: 'received'
+                    }
+                )
+            }, 1000);
         },
 
     }
