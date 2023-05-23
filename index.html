@@ -38,7 +38,7 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </div>
                 <!-- list of contacts -->
-                <div class="contact" v-for="contact in contacts">
+                <div class="contact" v-for="(contact, idxContact) in contacts" @click="showConversation(idxContact)">
                     <div class="icon">
                         <img :src="contact.avatar">
                     </div>
@@ -59,8 +59,9 @@
                 <!-- conversation -->
                 <div class="conversation">
 
-                    <div class="text-message" v-for="(message, idx) in contacts[0].messages">
-                        <div class="text" :class="contacts[0].messages[idx].status === 'sent' ? 'green' : 'grey'">
+                    <div class="text-message" v-for="(message, idxMessages) in contacts[activeItem].messages">
+                        <div class="text"
+                            :class="contacts[activeItem].messages[idxMessages].status === 'sent' ? 'green' : 'grey'">
                             <div class="msg">{{message.message}}</div>
                             <div class="time">{{message.date}}</div>
 

@@ -6,12 +6,13 @@ createApp({
     data() {
         return {
             inputMessage: '',
-
+            activeItem: 0,
             contacts: [
                 {
                     name: 'Michele',
                     avatar: 'img/avatar.png',
                     visible: true,
+
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -175,8 +176,8 @@ createApp({
         }
     },
     methods: {
-        addMessage() {
-
+        showConversation(indice) {
+            this.activeItem = indice;
         }
 
     }
