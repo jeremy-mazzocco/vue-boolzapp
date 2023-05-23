@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+#app {
+    height: 100vh;
+    position: relative;
+}
+
+.container-background--top {
+    height: 15%;
+    background-color: rgb(3, 156, 42);
+}
+
+.container-background--bottom {
+    height: 85%;
+    background-color: rgb(175, 175, 175);
+}
+
+main {
+    width: 80%;
+    height: 95%;
+    background-color: rgb(247, 247, 251);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.leftside {
+    flex-basis: calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
+}
+
+.rightside {
+    flex-basis: calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
+}
+
+.leftside>.header,
+.rightside>.header {
+    height: 60px;
+    background-color: rgb(166, 170, 170);
+    display: flex;
+}
+
+.leftside>.header>.user,
+.rightside>.header>.user {
+    flex-basis: calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
+}
+
+.leftside>.header>.icons,
+.rightside>.header>.icons {
+    flex-basis: calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+}
