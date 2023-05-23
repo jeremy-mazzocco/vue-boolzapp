@@ -21,6 +21,8 @@
 
         </div>
         <main>
+
+            <!-- left side of the app -->
             <div class="leftside">
                 <div class="header">
                     <div class="user">
@@ -28,13 +30,40 @@
                     <div class="icons">
                     </div>
                 </div>
+                <div class="notifiche">
+
+                </div>
+                <!-- search bar -->
+                <div class="search-contact">
+                    <input type="text" placeholder="Cerca o inizia una nuova chat">
+                </div>
+                <!-- list of contacts -->
+                <div class="contact" v-for="contact in contacts">
+                    <div class="icon">
+                        <img :src="contact.avatar">
+                    </div>
+                    <div class="name">{{contact.name }}</div>
+                    <div class="time">00:00</div>
+                </div>
             </div>
+
+            <!-- right side of the app -->
             <div class="rightside">
                 <div class="header">
                     <div class="user">
                     </div>
                     <div class="icons">
                     </div>
+                </div>
+                <div class="conversation">
+
+                </div>
+
+
+
+                <div class="input-message">
+                    <input v-model="inputMessage" type="text" placeholder="Scrivi un messaggio"
+                        @keyup.enter="addMessage()">
                 </div>
             </div>
         </main>
@@ -50,9 +79,7 @@
 
 
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.js"
-        integrity="sha512-Om0T2d9tl4H2ShSsEkWjJeQOlXGJg4OZvXKZw075refp2RNZ1avQDbqd6WhwGbWhqpcn2oPmExCEa/lSLzZaJw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="main.js"></script>
 </body>
 
