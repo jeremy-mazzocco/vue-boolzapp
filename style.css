@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     border: 1px solid;
+
 }
 
 #app {
     height: 100vh;
     position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -84,9 +86,32 @@ main {
 }
 
 .conversation {
-    height: calc(100% - 120px)
+    height: calc(100% - 120px);
+    padding: 2rem 3rem;
+    background-color: rgb(197, 192, 192);
 }
 
+.text-message {
+    height: 60px;
+    display: flex;
+    position: relative;
+}
+
+.text-message>.text {
+    font-size: 14px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.text>.time {
+    font-size: 9px;
+    color: rgb(164, 165, 165);
+    text-align: right;
+}
+
+
+/* input bar */
 .input-message {
     height: 60px;
 }
@@ -110,4 +135,19 @@ main {
 .rightside>.header>.icons {
     flex-basis: calc((100% / 12) * 3);
     max-width: calc((100% / 12) * 3);
+}
+
+
+
+
+/* VUE JS class */
+.green {
+    background-color: rgb(77, 215, 105);
+    right: 0;
+
+}
+
+.grey {
+    background-color: rgb(231, 235, 232);
+    left: 0;
 }

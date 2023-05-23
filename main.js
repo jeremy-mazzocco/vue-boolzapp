@@ -1,3 +1,5 @@
+// scegli il contatto e appare i suo messaggi, @click set visible:true v-if mostra il div
+
 const { createApp } = Vue;
 
 createApp({

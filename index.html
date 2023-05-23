@@ -42,7 +42,7 @@
                     <div class="icon">
                         <img :src="contact.avatar">
                     </div>
-                    <div class="name">{{contact.name }}</div>
+                    <div class="name">{{contact.name}}</div>
                     <div class="time">00:00</div>
                 </div>
             </div>
@@ -55,12 +55,24 @@
                     <div class="icons">
                     </div>
                 </div>
+
+                <!-- conversation -->
                 <div class="conversation">
+
+                    <div class="text-message" v-for="(message, idx) in contacts[0].messages">
+                        <div class="text" :class="contacts[0].messages[idx].status === 'sent' ? 'green' : 'grey'">
+                            <div class="msg">{{message.message}}</div>
+                            <div class="time">{{message.date}}</div>
+
+
+                        </div>
+
+                    </div>
+
 
                 </div>
 
-
-
+                <!-- input messages -->
                 <div class="input-message">
                     <input v-model="inputMessage" type="text" placeholder="Scrivi un messaggio"
                         @keyup.enter="addMessage()">
