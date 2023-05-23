@@ -12,7 +12,6 @@ createApp({
                     name: 'Michele',
                     avatar: 'img/avatar.png',
                     visible: true,
-
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
@@ -171,14 +170,22 @@ createApp({
                     ],
                 }
             ]
-
-
         }
     },
     methods: {
         showConversation(indice) {
             this.activeItem = indice;
-        }
+        },
+        sendMessage() {
+            this.contacts[this.activeItem].messages.push(
+                {
+                    date: 'now',
+                    message: this.inputMessage,
+                    status: 'sent'
+                }
+            )
+            this.inputMessage = '';
+        },
 
     }
 }).mount('#app')

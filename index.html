@@ -64,23 +64,17 @@
                             :class="contacts[activeItem].messages[idxMessages].status === 'sent' ? 'green' : 'grey'">
                             <div class="msg">{{message.message}}</div>
                             <div class="time">{{message.date}}</div>
-
-
                         </div>
-
                     </div>
-
-
                 </div>
 
                 <!-- input messages -->
                 <div class="input-message">
                     <input v-model="inputMessage" type="text" placeholder="Scrivi un messaggio"
-                        @keyup.enter="addMessage()">
+                        @keyup.enter="sendMessage()">
                 </div>
             </div>
         </main>
-
 
 
 
