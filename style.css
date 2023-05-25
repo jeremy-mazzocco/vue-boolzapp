@@ -68,7 +68,6 @@ main {
 }
 
 
-
 .leftside>.contact {
     height: 60px;
     display: flex;
@@ -107,6 +106,16 @@ main {
 .notifiche>.user {
     flex-basis: calc((100% / 12) * 10);
     max-width: calc((100% / 12) * 10);
+}
+
+.contact>.time {
+    text-align: center;
+}
+
+.time>span {
+    color: gray;
+    font-size: 12px;
+    vertical-align: middle;
 }
 
 .leftside>.contact>.icon,
@@ -176,6 +185,38 @@ main {
     text-align: right;
 }
 
+.message-arrow {
+    display: inline;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 10%;
+    top: 200%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ccc7c7;
+}
+
+.dropdown a:hover {
+    background-color: #e1dddd;
+}
+
 
 /* input bar */
 .input-message {
@@ -234,6 +275,10 @@ main {
     cursor: pointer;
 }
 
+.fa-chevron-down {
+    font-size: 10px;
+}
+
 input:hover {
     border: 2px solid rgb(113, 19, 139);
 }
@@ -245,7 +290,12 @@ input:hover {
     align-self: flex-end;
 }
 
+
 .grey {
     background-color: rgb(255, 255, 255);
     align-self: flex-start;
+}
+
+.show {
+    display: block;
 }
