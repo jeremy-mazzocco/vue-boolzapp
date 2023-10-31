@@ -128,6 +128,10 @@ main {
 }
 
 
+.rightside>.header>.icon {
+    margin-right: -50px;
+}
+
 .leftside>.contact>.name,
 .rightside>.header>.user {
     flex-basis: calc((100% / 12) * 6);

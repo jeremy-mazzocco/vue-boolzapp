@@ -8,25 +8,25 @@ createApp({
             searchContact: '',
             contacts: [
                 {
-                    name: 'Michele',
+                    name: 'Mike',
                     avatar: 'img/avatar.png',
                     visible: true,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Hai portato a spasso il cane?',
+                            message: 'Where is Luke?',
                             status: 'sent',
                             dropdown: ''
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Ricordati di stendere i panni',
+                            message: 'Did you do thee laundry?',
                             status: 'sent',
                             dropdown: ''
                         },
                         {
                             date: '10/01/2020 16:15:22',
-                            message: 'Tutto fatto!',
+                            message: 'All done!',
                             status: 'received'
                         }
                     ],
@@ -38,101 +38,101 @@ createApp({
                     messages: [
                         {
                             date: '20/03/2020 16:30:00',
-                            message: 'Ciao come stai?',
+                            message: 'Hey how are you?',
                             status: 'sent',
                             dropdown: ''
                         },
                         {
                             date: '20/03/2020 16:30:55',
-                            message: 'Bene grazie! Stasera ci vediamo?',
+                            message: 'Good thanks! What you do you do tonight?',
                             status: 'received',
                         },
                         {
                             date: '20/03/2020 16:35:00',
-                            message: 'Mi piacerebbe ma devo andare a fare la spesa.',
+                            message: 'I don\'t have plans.',
                             status: 'sent',
                             dropdown: ''
                         }
                     ],
                 },
                 {
-                    name: 'Samuele',
+                    name: 'Samuel',
                     avatar: 'img/dog.png',
                     visible: true,
                     messages: [
                         {
                             date: '28/03/2020 10:10:40',
-                            message: 'La Marianna va in campagna',
+                            message: '50 euro man',
                             status: 'received'
                         },
                         {
                             date: '28/03/2020 10:20:10',
-                            message: 'Sicuro di non aver sbagliato chat?',
+                            message: 'I think you is a wrong chat?',
                             status: 'sent',
                             dropdown: ''
                         },
                         {
                             date: '28/03/2020 16:15:22',
-                            message: 'Ah scusa!',
+                            message: 'Oh sorry!',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Alessandro B.',
+                    name: 'Alex B.',
                     avatar: 'img/hacker.png',
                     visible: true,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Lo sai che ha aperto una nuova pizzeria?',
+                            message: 'You know.. he opened a new restaurant',
                             status: 'sent',
                             dropdown: ''
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Si, ma preferirei andare al cinema',
+                            message: 'Ah really? I didn\'t know that!',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Alessandro L.',
+                    name: 'Alex L.',
                     avatar: 'img/scuba-diver.png',
                     visible: true,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Ricordati di chiamare la nonna',
+                            message: 'Remeber to clean the house!',
                             status: 'sent',
                             dropdown: ''
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Va bene, stasera la sento',
+                            message: 'All done!',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Claudia',
+                    name: 'Britney',
                     avatar: 'img/soldier.png',
                     visible: true,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Ciao Claudia, hai novità?',
+                            message: 'Hi I\'m Britney, any news?',
                             status: 'sent',
                             dropdown: ''
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Non ancora',
+                            message: 'Not yet, I\'ll let you know!',
                             status: 'received'
                         },
                         {
                             date: '10/01/2020 15:51:00',
-                            message: 'Nessuna nuova, buona nuova',
+                            message: 'Ok, thanks!',
                             status: 'sent',
                             dropdown: ''
                         }
@@ -145,30 +145,30 @@ createApp({
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Fai gli auguri a Martina che è il suo compleanno!',
+                            message: 'Hi, I\'m Federico, I\'m a student at Boolean, I\'m looking for a job!',
                             status: 'sent',
                             dropdown: ''
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'Grazie per avermelo ricordato, le scrivo subito!',
+                            message: 'Hi Federico, we\'ll let you know!',
                             status: 'received'
                         }
                     ],
                 },
                 {
-                    name: 'Davide',
+                    name: 'David',
                     avatar: 'img/woman.png',
                     visible: true,
                     messages: [
                         {
                             date: '10/01/2020 15:30:55',
-                            message: 'Ciao, andiamo a mangiare la pizza stasera?',
+                            message: 'Hi, Do you want to go to the cinema tonight?',
                             status: 'received'
                         },
                         {
                             date: '10/01/2020 15:50:00',
-                            message: 'No, l\'ho già mangiata ieri, ordiniamo sushi!',
+                            message: 'No, I\'m sorry, I have to study!',
                             status: 'sent',
                             dropdown: ''
                         },
@@ -255,8 +255,4 @@ createApp({
     }
 }).mount('#app')
 
-
-// import { DateTime } from 'luxon';
-
-// DateTime.now();
 
