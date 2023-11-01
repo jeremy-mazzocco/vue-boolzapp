@@ -53,6 +53,10 @@ main {
     background-color: rgb(156, 222, 251);
 }
 
+.mainLoginInput {
+    padding-left: 10px;
+}
+
 .search-contact {
     height: 30px;
     text-align: center;
